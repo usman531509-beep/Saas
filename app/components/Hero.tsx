@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { useEffect, useMemo, useState } from "react";
+import { BGPattern } from "@/components/ui/bg-pattern";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 
 const ROTATING_WORDS = [
@@ -23,7 +24,13 @@ export function Hero() {
   }, [titleNumber, titles]);
 
   return (
-    <section id="home" className="relative pt-20">
+    <section id="home" className="relative isolate pt-20">
+      <BGPattern
+        variant="dots"
+        mask="fade-edges"
+        size={28}
+        fill="rgba(var(--surface-tint), 0.22)"
+      />
       <ContainerScroll
         titleComponent={
           <div className="flex flex-col items-center px-4 text-center">
