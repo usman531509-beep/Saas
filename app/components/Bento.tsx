@@ -12,7 +12,7 @@ export function Bento() {
         What&apos;s inside
       </div>
       <h2 className="max-w-3xl text-balance text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
-        A complete platform — built for the way modern teams ship AI.
+        A complete platform built for the way modern teams ship AI.
       </h2>
       <p className="mt-4 max-w-2xl text-pretty text-foreground/60">
         Everything you need to take agents from prototype to production. No
