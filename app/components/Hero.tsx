@@ -36,14 +36,17 @@ export function Hero() {
           <div className="flex flex-col items-center px-4 text-center">
             <a
               href="#"
-              className="mb-6 inline-flex items-center gap-2 rounded-full glass px-3.5 py-1.5 text-xs font-medium text-foreground/80 transition-colors hover:text-foreground"
+              className="animate-fade-up mb-6 inline-flex items-center gap-2 rounded-full glass px-3.5 py-1.5 text-xs font-medium text-foreground/80 transition-colors hover:text-foreground"
             >
               <span className="h-2 w-2 rounded-full bg-violet-500" />
               Nebula 2.0 agents now ship to production
               <ChevronIcon />
             </a>
 
-            <h1 className="text-balance text-[40px] font-semibold leading-[1.02] tracking-tight text-foreground sm:text-6xl md:text-7xl">
+            <h1
+              className="animate-fade-up text-balance text-[40px] font-semibold leading-[1.02] tracking-tight text-foreground sm:text-6xl md:text-7xl"
+              style={{ animationDelay: "120ms" }}
+            >
               <span className="text-gradient">The operating system for</span>
               <span className="relative mt-2 flex h-[1.15em] w-full justify-center overflow-hidden text-center md:mt-3">
                 &nbsp;
@@ -68,13 +71,19 @@ export function Hero() {
               </span>
             </h1>
 
-            <p className="mt-6 max-w-2xl text-pretty text-base leading-relaxed text-foreground/60 sm:text-lg">
+            <p
+              className="animate-fade-up mt-6 max-w-2xl text-pretty text-base leading-relaxed text-foreground/60 sm:text-lg"
+              style={{ animationDelay: "240ms" }}
+            >
               Build, deploy, and observe production-grade agent workflows in
               min without the glue code. One workspace for prompts,
               evaluations, and live traffic.
             </p>
 
-            <div className="mt-9 flex flex-col items-center gap-3 sm:flex-row sm:gap-4">
+            <div
+              className="animate-fade-up mt-9 flex flex-col items-center gap-3 sm:flex-row sm:gap-4"
+              style={{ animationDelay: "360ms" }}
+            >
               <a
                 href="#cta"
                 className="inline-flex h-12 items-center justify-center gap-2 rounded-full bg-foreground px-7 text-sm font-medium text-background transition-colors hover:bg-foreground/90"

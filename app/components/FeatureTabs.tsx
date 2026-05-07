@@ -1,5 +1,6 @@
 import { Code, LineChart, Network } from "lucide-react";
 import { Feature108 } from "@/components/ui/shadcnblocks-com-feature108";
+import { Reveal } from "./Reveal";
 
 const tabs = [
   {
@@ -51,11 +52,13 @@ const tabs = [
 
 export function FeatureTabs() {
   return (
-    <Feature108
-      badge="Platform deep-dive"
-      heading="Three pillars. One coherent platform."
-      description="Everything you need from prototype to production without stitching together five vendors."
-      tabs={tabs}
-    />
+    <Reveal direction="left">
+      <Feature108
+        badge="Platform deep-dive"
+        heading="Three pillars. One coherent platform."
+        description="Everything you need from prototype to production without stitching together five vendors."
+        tabs={tabs}
+      />
+    </Reveal>
   );
 }

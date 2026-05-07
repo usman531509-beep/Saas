@@ -1,5 +1,6 @@
 import { BentoCard } from "./BentoCard";
 import { Icon3D } from "./Icon3D";
+import { Reveal } from "./Reveal";
 
 export function Bento() {
   return (
@@ -7,17 +8,19 @@ export function Bento() {
       id="features"
       className="relative mx-auto max-w-7xl px-6 py-28 md:py-36"
     >
-      <div className="mb-3 inline-flex items-center gap-2 rounded-full glass px-3 py-1 text-xs text-foreground/70">
-        <span className="h-1.5 w-1.5 rounded-full bg-fuchsia-400" />
-        What&apos;s inside
-      </div>
-      <h2 className="max-w-3xl text-balance text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
-        A complete platform built for the way modern teams ship AI.
-      </h2>
-      <p className="mt-4 max-w-2xl text-pretty text-foreground/60">
-        Everything you need to take agents from prototype to production. No
-        stitching together five vendors. No babysitting prompts in spreadsheets.
-      </p>
+      <Reveal direction="left">
+        <div className="mb-3 inline-flex items-center gap-2 rounded-full glass px-3 py-1 text-xs text-foreground/70">
+          <span className="h-1.5 w-1.5 rounded-full bg-fuchsia-400" />
+          What&apos;s inside
+        </div>
+        <h2 className="max-w-3xl text-balance text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
+          A complete platform built for the way modern teams ship AI.
+        </h2>
+        <p className="mt-4 max-w-2xl text-pretty text-foreground/60">
+          Everything you need to take agents from prototype to production. No
+          stitching together five vendors. No babysitting prompts in spreadsheets.
+        </p>
+      </Reveal>
 
       <div className="mt-14 grid auto-rows-[minmax(220px,auto)] grid-cols-1 gap-4 md:grid-cols-6">
         <BentoCard className="md:col-span-4 md:row-span-2">

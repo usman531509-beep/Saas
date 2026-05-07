@@ -2,6 +2,7 @@ import {
   PricingCard,
   type PricingCardProps,
 } from "@/components/ui/animated-glassy-pricing";
+import { Reveal } from "./Reveal";
 
 const plans: PricingCardProps[] = [
   {
@@ -53,7 +54,7 @@ export function Pricing() {
       id="pricing"
       className="relative mx-auto max-w-7xl px-6 py-28 md:py-36"
     >
-      <div className="mx-auto max-w-3xl text-center">
+      <Reveal className="mx-auto max-w-3xl text-center">
         <div className="mb-3 inline-flex items-center gap-2 rounded-full glass px-3 py-1 text-xs text-foreground/70">
           <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
           Pricing
@@ -66,7 +67,7 @@ export function Pricing() {
           Start free. Pay only for what you ship — not what you experiment with.
           Switch plans anytime.
         </p>
-      </div>
+      </Reveal>
 
       <div className="mt-14 flex flex-col items-center justify-center gap-8 md:flex-row md:items-stretch md:gap-6">
         {plans.map((plan) => (

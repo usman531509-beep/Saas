@@ -1,13 +1,21 @@
+import { Reveal } from "./Reveal";
+
 export function CTA() {
   return (
     <section id="cta" className="relative mx-auto max-w-7xl px-6 py-24">
-      <div
+      <Reveal
+        direction="right"
         className="relative overflow-hidden rounded-[32px] glass-strong px-8 py-16 md:px-16 md:py-24"
-        style={{
-          backgroundImage:
-            "radial-gradient(60% 80% at 0% 50%, rgba(139,92,246,0.18), transparent 70%), radial-gradient(50% 80% at 100% 0%, rgba(34,211,238,0.16), transparent 70%)",
-        }}
+        distance={40}
       >
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 -z-10"
+          style={{
+            backgroundImage:
+              "radial-gradient(60% 80% at 0% 50%, rgba(139,92,246,0.18), transparent 70%), radial-gradient(50% 80% at 100% 0%, rgba(34,211,238,0.16), transparent 70%)",
+          }}
+        />
         <div className="relative max-w-3xl">
           <h2 className="text-balance text-4xl font-semibold leading-tight tracking-tight sm:text-6xl">
             Ship the agent.
@@ -60,7 +68,7 @@ export function CTA() {
             </span>
           </div>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }
